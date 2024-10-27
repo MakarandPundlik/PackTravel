@@ -11,3 +11,4 @@ def get_client():
     endpoint = "mongodb+srv://" + config["database"]["username"] + ":" + config["database"]["password"] + "@" + config["database"]["endpoint"]
     client = MongoClient(endpoint)
     return client
+#mongodb+srv://<db_username>:<db_password>@cluster0.wc05z.mongodb.net/

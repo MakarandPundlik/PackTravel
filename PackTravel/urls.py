@@ -21,6 +21,7 @@ from publish import views as publishViews
 from request import views as requestsViews
 
 urlpatterns = [
+    path('', userView.index, name ='index'),
     path('admin/', admin.site.urls),
     path('search/', searchViews.search_index, name='search'),
     path('request_ride/<ride_id>', searchViews.request_ride, name='request_ride'),
